@@ -67,7 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.46"/>
+        />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/text1_guide1"
         android:layout_width="wrap_content"
@@ -90,7 +90,7 @@
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/welcomelogo"
+        android:background="@drawable/hi_logo"
         app:layout_constraintStart_toStartOf="@id/welcome_logo2"
         app:layout_constraintEnd_toEndOf="@id/welcome_logo3"
         app:layout_constraintTop_toTopOf="parent"
@@ -105,7 +105,7 @@
         app:layout_constraintEnd_toEndOf="@id/button_guide2"
         app:layout_constraintTop_toTopOf="@id/log_in_guide2"
         app:layout_constraintBottom_toBottomOf="@id/log_in_guide1"
-        android:background="#ffd21c"
+        android:background="@drawable/buttonrund"
         android:text="@string/log_in_go"
         android:textSize="20sp"
         android:textColor="@color/white"
@@ -119,11 +119,35 @@
         app:layout_constraintEnd_toEndOf="@id/button_guide2"
         app:layout_constraintTop_toTopOf="@id/sin_up_guide2"
         app:layout_constraintBottom_toBottomOf="@id/sin_up_guide1"
-        android:background="#ffd21c"
+        android:background="@drawable/buttonrund"
         android:text="@string/sin_up_go"
         android:textSize="20sp"
         android:textColor="@color/white"
         android:textStyle="bold"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/text1_guide1"
+        app:layout_constraintStart_toStartOf="@id/button_guide1"
+        app:layout_constraintEnd_toEndOf="@id/button_guide2"
+        app:layout_constraintBottom_toBottomOf="@id/text1_guide2"
+        android:text="@string/welcome_big_text"
+        android:textSize="31.5sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/text1_guide2"
+        app:layout_constraintBottom_toBottomOf="@id/text1_guide3"
+        app:layout_constraintStart_toStartOf="@id/button_guide1"
+        app:layout_constraintEnd_toEndOf="@id/button_guide2"
+        android:text="@string/welcome_small_text"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
 
 
 

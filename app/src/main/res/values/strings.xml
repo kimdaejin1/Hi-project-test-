@@ -2,4 +2,6 @@
     <string name="app_name">Hi project(test)</string>
     <string name="log_in_go">로그인하기</string>
     <string name="sin_up_go">회원가입하기</string>
+    <string name="welcome_big_text">반가워요!</string>
+    <string name="welcome_small_text">Hi에서 홈베이스 신청을\n온라인으로 쉽게 해보아요</string>
 </resources>
