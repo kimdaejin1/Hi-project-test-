@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.sinUpButton.setOnClickListener{
-            var intent = Intent(this,MainActivity2::class.java)
+            var intent = Intent(this,SinupActivity::class.java)
             startActivity(intent)
         }
     }
