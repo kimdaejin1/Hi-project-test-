@@ -139,13 +139,16 @@
         android:textColor="#4d4d4d"
         android:fontFamily="@font/pretendard_bold"/>
     <EditText
+        android:id="@+id/input_text_name"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="@id/first_guide_ver"
         app:layout_constraintEnd_toEndOf="@id/seventh_guide_ver"
         app:layout_constraintTop_toTopOf="@id/text2_guide4"
         app:layout_constraintBottom_toBottomOf="@id/text2_guide5"
-        android:hint="@string/name_edit"/>
+        android:hint="@string/name_edit"
+        android:inputType="text"
+        android:privateImeOptions="defaultInputmode=korean"/>
     <Button
         android:id="@+id/preve_acount_btn"
         android:layout_width="0dp"
