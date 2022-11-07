@@ -10,7 +10,7 @@ import com.example.hiprojecttest.databinding.ActivitySinupBinding
 class SinupActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySinupBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        //binding= SinupActivity.inflate(layoutInflater)
+        binding= ActivitySinupBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
