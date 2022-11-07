@@ -14,7 +14,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.logInButton.setOnClickListener{
-
+            var intent = Intent(this,LoginActivity::class.java)
+            startActivity(intent)
         }
 
         binding.sinUpButton.setOnClickListener{
