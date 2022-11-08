@@ -90,7 +90,7 @@
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/hi_logo"
+        android:background="@drawable/hi_logo__2_"
         app:layout_constraintStart_toStartOf="@id/welcome_logo2"
         app:layout_constraintEnd_toEndOf="@id/welcome_logo3"
         app:layout_constraintTop_toTopOf="parent"

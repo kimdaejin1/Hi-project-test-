@@ -169,7 +169,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@id/text2_guide8"
-        android:background="#999999"
+        android:background="@color/hint_black"
         android:text="@string/next_stage"
         android:textColor="@color/white"
         android:fontFamily="@font/pretendard_bold"
