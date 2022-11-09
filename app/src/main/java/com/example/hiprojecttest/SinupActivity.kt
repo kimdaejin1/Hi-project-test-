@@ -40,5 +40,12 @@ class SinupActivity : AppCompatActivity() {
             var intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
+
+        binding.backTrakingBtn.setOnClickListener{
+            var intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }

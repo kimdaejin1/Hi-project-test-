@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sinupActivity">
+
+    <activity
+        android:id="@+id/sinupActivity"
+        android:name="com.example.hiprojecttest.SinupActivity"
+        android:label="activity_sinup"
+        tools:layout="@layout/activity_sinup" />
+    <activity
+        android:id="@+id/e_mailFragment"
+        android:name="com.example.hiprojecttest.fragment.e_mailFragment"
+        android:label="fragment_e_mail"
+        tools:layout="@layout/fragment_e_mail" />
+</navigation>
