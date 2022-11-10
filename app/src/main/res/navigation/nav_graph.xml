@@ -3,16 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/sinupActivity">
+    app:startDestination="@id/real_nameFragment">
 
-    <activity
-        android:id="@+id/sinupActivity"
-        android:name="com.example.hiprojecttest.SinupActivity"
-        android:label="activity_sinup"
-        tools:layout="@layout/activity_sinup" />
     <activity
         android:id="@+id/e_mailFragment"
         android:name="com.example.hiprojecttest.fragment.e_mailFragment"
         android:label="fragment_e_mail"
         tools:layout="@layout/fragment_e_mail" />
+    <fragment
+        android:id="@+id/real_nameFragment"
+        android:name="com.example.hiprojecttest.fragment.real_nameFragment"
+        android:label="fragment_real_name"
+        tools:layout="@layout/fragment_real_name" >
+        <action
+            android:id="@+id/action_real_nameFragment_to_e_mailFragment"
+            app:destination="@id/e_mailFragment" />
+    </fragment>
 </navigation>

@@ -16,4 +16,6 @@
     <string name="email_too_input">이메일도 알려주세요!</string>
     <string name="ex_email">s22001@gsm.hs.kr</string>
     <string name="post_email">인증번호 발급</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

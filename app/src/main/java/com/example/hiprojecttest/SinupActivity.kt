@@ -9,7 +9,8 @@ import android.text.TextWatcher
 import android.util.Log
 import androidx.annotation.RequiresApi
 import com.example.hiprojecttest.databinding.ActivitySinupBinding
-
+import com.example.hiprojecttest.fragment.e_mailFragment
+import com.example.hiprojecttest.fragment.real_nameFragment
 
 
 class SinupActivity : AppCompatActivity() {
@@ -21,31 +22,20 @@ class SinupActivity : AppCompatActivity() {
         binding = ActivitySinupBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        var setting = binding.inputTextName.text.toString()
-        val color = getColor(R.color.yellow)
 
-        binding.inputTextName.setOnTextChanged { p0, p1, p2, p3 ->
-            Log.d("TAG", "onCreate: ${p0.isNullOrBlank()}")
-            if(!p0.isNullOrBlank()){
-                val color = getColor(R.color.yellow)
-                binding.nextStageBtn.setBackgroundColor(color)
+        setFregment(0)
+
+
+    }
+    fun setFregment(fragmentNum:Int) {
+        val ft = supportFragmentManager.beginTransaction()
+        when(fragmentNum){
+            0 ->{
+                ft.replace(R.id.sin_up_frame,real_nameFragment()).commit()
             }
-            if(p0.isNullOrBlank()){
-                val button_color =getColor(R.color.hint_black)
-                binding.nextStageBtn.setBackgroundColor(button_color)
+            1 ->{
+                ft.replace(R.id.sin_up_frame,e_mailFragment()).commit()
             }
         }
-
-        binding.preveAcountBtn.setOnClickListener {
-            var intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-        }
-
-        binding.backTrakingBtn.setOnClickListener{
-            var intent = Intent(this,MainActivity::class.java)
-            startActivity(intent)
-        }
-
-
     }
 }
