@@ -1,5 +1,7 @@
 package com.example.hiprojecttest.fragment
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -10,6 +12,7 @@ import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.example.hiprojecttest.R
 import com.example.hiprojecttest.databinding.FragmentRealNameBinding
 import com.example.hiprojecttest.setOnTextChanged
@@ -21,26 +24,24 @@ class RealNameFragment : Fragment() {
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding= FragmentRealNameBinding.inflate(inflater,container,false)
-        val view = binding.root
-        return inflater.inflate(R.layout.fragment_real_name,container,false)
+        return binding.root
 
     }
 
+    @SuppressLint("ResourceType")
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        navController = Navigation.findNavController(view)
+        navController = requireActivity().findNavController(R.id.nav_host_fragment)
 
         var setting = binding.inputTextName.toString()
-        val color = requireActivity().getColor(R.color.yellow)
-        val color1 = requireActivity().getColor(R.color.hint_black)
 
 
         binding.inputTextName.setOnTextChanged { p0, p1, p2, p3 ->
             if (!p0.isNullOrBlank()){
                 Log.d("TAG", "is not NULL ")
-                binding.nextStageBtn.setBackgroundColor(color)
+                binding.nextStageBtn.setBackground(resources.getDrawable(R.drawable.gradientbutton))
                 binding.nextStageBtn.setOnClickListener {
                     Log.d("TAG", "onClick")
                     navController.navigate(R.id.action_real_nameFragment_to_e_mailFragment)
@@ -48,11 +49,11 @@ class RealNameFragment : Fragment() {
             }
             if (p0.isNullOrBlank()){
                 Log.d("TAG", "is NULL")
-                binding.nextStageBtn.setBackgroundColor(color1)
             }
         }
     }
 
 
 }
+
 

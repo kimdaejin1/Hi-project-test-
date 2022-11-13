@@ -5,11 +5,6 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/real_nameFragment">
 
-    <activity
-        android:id="@+id/e_mailFragment"
-        android:name="com.example.hiprojecttest.fragment.EmailFragment"
-        android:label="fragment_e_mail"
-        tools:layout="@layout/fragment_e_mail" />
     <fragment
         android:id="@+id/real_nameFragment"
         android:name="com.example.hiprojecttest.fragment.RealNameFragment"
@@ -19,4 +14,10 @@
             android:id="@+id/action_real_nameFragment_to_e_mailFragment"
             app:destination="@id/e_mailFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/e_mailFragment"
+        android:name="com.example.hiprojecttest.fragment.EmailFragment"
+        android:label="fragment_e_mail"
+        tools:layout="@layout/fragment_e_mail" />
 </navigation>
