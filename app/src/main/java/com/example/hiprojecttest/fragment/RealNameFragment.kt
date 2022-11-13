@@ -33,7 +33,7 @@ class RealNameFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        navController = requireActivity().findNavController(R.id.nav_host_fragment)
+        navController = requireActivity().findNavController(R.id.nav_host_fragment_email)
 
         var setting = binding.inputTextName.toString()
 
