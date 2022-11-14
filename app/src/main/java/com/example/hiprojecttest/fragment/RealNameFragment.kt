@@ -13,7 +13,9 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
+import com.example.hiprojecttest.MainActivity
 import com.example.hiprojecttest.R
+import com.example.hiprojecttest.SinUpActivity
 import com.example.hiprojecttest.databinding.FragmentRealNameBinding
 import com.example.hiprojecttest.setOnTextChanged
 
@@ -47,9 +49,11 @@ class RealNameFragment : Fragment() {
                     navController.navigate(R.id.action_real_nameFragment_to_e_mailFragment)
                 }
             }
-            if (p0.isNullOrBlank()){
-                Log.d("TAG", "is NULL")
-            }
+        }
+
+        binding.backTrakingBtn.setOnClickListener{
+            val intent = Intent(activity,MainActivity::class.java)
+            startActivity(intent)
         }
     }
 

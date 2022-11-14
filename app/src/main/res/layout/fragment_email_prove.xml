@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.RealNameFragment">
+    tools:context=".fragment.EmailProveFragment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/text2_guide"
@@ -32,32 +31,31 @@
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.54"/>
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/fourth_guide_ver"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.332"/>
+        app:layout_constraintGuide_percent="0.532"/>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/fiveth_guide_ver"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.42"/>
+        app:layout_constraintGuide_percent="0.65"/>
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/seventh_guide_ver"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.95"/>
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/text2_guide2"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="151dp" />
+        app:layout_constraintGuide_percent="0.182"/>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/text2_guide3"
         android:layout_width="wrap_content"
@@ -101,6 +99,13 @@
         android:layout_height="1dp"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.25"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/post_email_button"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.71"/>
+
 
 
     <TextView
@@ -110,7 +115,7 @@
         app:layout_constraintEnd_toEndOf="@id/second_guide_ver"
         app:layout_constraintTop_toTopOf="@id/text2_guide"
         app:layout_constraintBottom_toBottomOf="@id/text2_guide1"
-        android:text="@string/welcome_sin_up"
+        android:text="@string/email_input_title"
         android:textSize="30sp"
         android:fontFamily="@font/pretendard_extrabold"
         android:textColor="@color/black"/>
@@ -121,31 +126,43 @@
         app:layout_constraintEnd_toEndOf="@id/fiveth_guide_ver"
         app:layout_constraintTop_toTopOf="@id/text2_guide1"
         app:layout_constraintBottom_toBottomOf="@id/text2_guide2"
-        android:text="@string/welcome_Hi"
+        android:text="@string/email_prove_text"
         android:textSize="15sp"
         android:fontFamily="@font/pretendard_bold"/>
     <TextView
+        android:id="@+id/text_input_email"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="@id/first_guide_ver"
         app:layout_constraintEnd_toEndOf="@id/fourth_guide_ver"
         app:layout_constraintTop_toTopOf="@id/text2_guide3"
         app:layout_constraintBottom_toBottomOf="@id/text2_guide4"
-        android:text="@string/what_is_name"
+        android:text="@string/email_prove_text_1"
         android:textSize="12sp"
         android:textColor="#4d4d4d"
         android:fontFamily="@font/pretendard_bold"/>
     <EditText
-        android:id="@+id/input_text_name"
+        android:id="@+id/input_text_email"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="@id/first_guide_ver"
         app:layout_constraintEnd_toEndOf="@id/seventh_guide_ver"
         app:layout_constraintTop_toTopOf="@id/text2_guide4"
         app:layout_constraintBottom_toBottomOf="@id/text2_guide5"
-        android:hint="@string/name_edit"
-        android:inputType="text"
-        android:privateImeOptions="defaultInputmode=korean"/>
+        android:hint="@string/email_prove_hint"
+        android:inputType="textEmailAddress" />
+    <Button
+        android:id="@+id/repost_email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/post_email_button"
+        app:layout_constraintEnd_toEndOf="@id/seventh_guide_ver"
+        app:layout_constraintTop_toTopOf="@id/text2_guide4"
+        app:layout_constraintBottom_toBottomOf="@id/text2_guide5"
+        android:background="#00ff0000"
+        android:text="@string/repost_email"
+        android:textColor="#ffc033"
+        android:fontFamily="@font/pretendard_bold"/>
     <Button
         android:id="@+id/next_stage_btn"
         android:layout_width="0dp"
@@ -155,7 +172,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@id/text2_guide8"
         android:background="@color/hint_black"
-        android:text="@string/next_stage"
+        android:text="@string/erly_finish"
         android:textColor="@color/white"
         android:fontFamily="@font/pretendard_bold"
         android:textSize="24sp"/>
@@ -169,6 +186,5 @@
         app:layout_constraintTop_toTopOf="@id/backTraking_guide_hor1"
         app:layout_constraintBottom_toBottomOf="@id/backTraking_guide_hor2"
         android:background="@drawable/backtracking_button_image"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,5 +19,21 @@
         android:id="@+id/e_mailFragment"
         android:name="com.example.hiprojecttest.fragment.EmailFragment"
         android:label="fragment_e_mail"
-        tools:layout="@layout/fragment_e_mail" />
+        tools:layout="@layout/fragment_e_mail" >
+        <action
+            android:id="@+id/action_e_mailFragment_to_emailProveFragment"
+            app:destination="@id/emailProveFragment" />
+        <action
+            android:id="@+id/action_e_mailFragment_to_real_nameFragment"
+            app:destination="@id/real_nameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailProveFragment"
+        android:name="com.example.hiprojecttest.fragment.EmailProveFragment"
+        android:label="fragment_email_prove"
+        tools:layout="@layout/fragment_email_prove" >
+        <action
+            android:id="@+id/action_emailProveFragment_to_e_mailFragment"
+            app:destination="@id/e_mailFragment" />
+    </fragment>
 </navigation>
