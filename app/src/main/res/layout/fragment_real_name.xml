@@ -89,12 +89,13 @@
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.02"/>
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/backTraking_guide_hor2"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.07"/>
+        app:layout_constraintGuide_begin="58dp" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/backTraking_guide_ver1"
         android:layout_width="wrap_content"
@@ -145,7 +146,9 @@
         app:layout_constraintBottom_toBottomOf="@id/text2_guide5"
         android:hint="@string/name_edit"
         android:inputType="text"
-        android:privateImeOptions="defaultInputmode=korean"/>
+        android:privateImeOptions="defaultInputmode=korean"
+        android:backgroundTint="@color/hint_black"
+        />
     <Button
         android:id="@+id/next_stage_btn"
         android:layout_width="0dp"

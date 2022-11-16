@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+
         binding.logInButton.setOnClickListener{
             val intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MakingPassFragment">
+
+    <!--뒤로가기 버튼-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/goBackGuide_ver_left"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/goBackGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.24"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/goBackGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/goBackGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06"/>
+    <!--텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/TextGuide_ver_left"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+    <!-- 가장 큰 텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bigTextGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.63"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bigTextGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.092"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bigTextGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14"/>
+    <!-- 좀 작은 텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/littelTextGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/littelTextGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16"/>
+    <!-- 비밀번호 위 작은 텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.34"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.338"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.354"/>
+    <!-- 비밀번호 입력란 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/passInputGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/passInputGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.411"/>
+    <!-- 비밀번호 확인란 위 작은 텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide2_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.443"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTextGuide2_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.521"/>
+    <!-- 버튼-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/nextStageBtnGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8954"/>
+
+    <ImageButton
+        android:id="@+id/goBackButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/backtracking_button_image"
+        app:layout_constraintStart_toStartOf="@id/goBackGuide_ver_left"
+        app:layout_constraintEnd_toEndOf="@id/goBackGuide_ver_right"
+        app:layout_constraintTop_toTopOf="@id/goBackGuide_hor_top"
+        app:layout_constraintBottom_toBottomOf="@id/goBackGuide_hor_bottom"/>
+    
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

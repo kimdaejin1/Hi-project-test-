@@ -1,5 +1,6 @@
 package com.example.hiprojecttest.fragment
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -18,6 +19,7 @@ class EmailFragment : Fragment(){
         binding= FragmentEMailBinding.inflate(inflater,container,false)
         return binding.root
     }
+    @SuppressLint("ResourceAsColor")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

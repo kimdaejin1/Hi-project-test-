@@ -35,5 +35,17 @@
         <action
             android:id="@+id/action_emailProveFragment_to_e_mailFragment"
             app:destination="@id/e_mailFragment" />
+        <action
+            android:id="@+id/action_emailProveFragment_to_makingPassFragment"
+            app:destination="@id/makingPassFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/makingPassFragment"
+        android:name="com.example.hiprojecttest.fragment.MakingPassFragment"
+        android:label="fragment_making_pass"
+        tools:layout="@layout/fragment_making_pass" >
+        <action
+            android:id="@+id/action_makingPassFragment_to_emailProveFragment"
+            app:destination="@id/emailProveFragment" />
     </fragment>
 </navigation>

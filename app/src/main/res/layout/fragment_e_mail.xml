@@ -152,7 +152,7 @@
             app:layout_constraintTop_toTopOf="@id/text2_guide4"
             app:layout_constraintBottom_toBottomOf="@id/text2_guide5"
             android:hint="@string/ex_email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress" />"
     <Button
         android:id="@+id/post_email"
         android:layout_width="0dp"
