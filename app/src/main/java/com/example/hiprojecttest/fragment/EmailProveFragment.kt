@@ -43,7 +43,7 @@ class EmailProveFragment : Fragment() {
         }
         binding.repostEmail.setOnClickListener{
             binding.inputTextEmail.setText(null)
-            binding.nextStageBtn.setBackgroundColor(resources.getColor(R.color.hint_black))
+            binding.nextStageBtn.setBackgroundColor(resources.getColor(R.color.hint_black1))
         }
         binding.backTrakingBtn.setOnClickListener {
             navController.navigate(R.id.action_emailProveFragment_to_e_mailFragment)

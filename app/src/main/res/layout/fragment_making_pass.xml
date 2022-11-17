@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.24"/>
+        app:layout_constraintGuide_percent="0.22"/>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/goBackGuide_hor_top"
         android:layout_width="match_parent"
@@ -132,7 +132,25 @@
         app:layout_constraintEnd_toEndOf="@id/goBackGuide_ver_right"
         app:layout_constraintTop_toTopOf="@id/goBackGuide_hor_top"
         app:layout_constraintBottom_toBottomOf="@id/goBackGuide_hor_bottom"/>
-    
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
+        app:layout_constraintTop_toTopOf="@id/bigTextGuide_hor_top"
+        app:layout_constraintBottom_toBottomOf="@id/bigTextGuide_hor_bottom"
+        app:layout_constraintEnd_toEndOf="@id/bigTextGuide_ver_right"
+        android:text="@string/bigTitle_making_pass"
+        android:textSize="32.64sp"
+        android:fontFamily="@font/pretendard_extrabold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/TextGuide_ver_left"
+        app:layout_constraintTop_toTopOf="@id/bigTextGuide_hor_bottom"
+        app:layout_constraintEnd_toEndOf="@id/littelTextGuide_ver_right"
+        app:layout_constraintBottom_toBottomOf="@id/littelTextGuide_hor_bottom"
+        android:text="@string/smallTilte_making_pass"/>
 
 
 
