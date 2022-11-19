@@ -23,4 +23,8 @@
     <string name="repost_email">다시 받기</string>
     <string name="bigTitle_making_pass">비밀번호 만들기</string>
     <string name="smallTilte_making_pass">아무도 모를 비밀번호를 만들어주세요!</string>
+    <string name="smallText_making_pass">비밀번호를 알려주세요!</string>
+    <string name="input_pass">비밀번호를 입력해주세요!</string>
+    <string name="reinput_pass">다시 한 번 말해주실래요?</string>
+    <string name="last_sinup">회원가입하기</string>
 </resources>

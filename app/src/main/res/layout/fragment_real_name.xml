@@ -57,14 +57,14 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.139"/>
+        app:layout_constraintGuide_percent="0.143"/>
     <!-- 그 밑에 좀 작은 텍스트 -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/smallTextGuide_hor_bottom"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.162"/>
+        app:layout_constraintGuide_percent="0.169"/>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/smallTextGuide_ver_right"
         android:layout_width="match_parent"
@@ -141,7 +141,7 @@
         app:layout_constraintTop_toTopOf="@id/bigTextGuide_hor_bottom"
         app:layout_constraintBottom_toBottomOf="@id/smallTextGuide_hor_bottom"
         android:text="@string/welcome_Hi"
-        android:fontFamily="@font/pretendard_bold"
+        android:fontFamily="@font/pretendard_semibold"
         android:textColor="@color/hint_black1"
         android:textSize="15.36sp"/>
     <TextView
@@ -153,7 +153,7 @@
         app:layout_constraintTop_toTopOf="@id/smallTextGuide2_hor_top"
         app:layout_constraintBottom_toBottomOf="@id/smallTextGuide2_hor_bottom"
         android:text="@string/what_is_name"
-        android:fontFamily="@font/pretendard_bold"
+        android:fontFamily="@font/pretendard_medium"
         android:textSize="11sp"
         android:textColor="@color/hint_black2"/>
     <EditText
@@ -166,7 +166,7 @@
         app:layout_constraintBottom_toBottomOf="@id/nameInputGuide_hor_bottom"
         android:hint="@string/name_edit"
         android:textColorHint="@color/hint_black1"
-        android:fontFamily="@font/pretendard_bold"
+        android:fontFamily="@font/pretendard_medium"
         android:textSize="16sp"/>
     <Button
         android:id="@+id/next_stage_btn"
@@ -179,7 +179,7 @@
         android:background="@color/hint_black1"
         android:text="@string/next_stage"
         android:textSize="23sp"
-        android:fontFamily="@font/pretendard_bold"
+        android:fontFamily="@font/pretendard_semibold"
         android:textColor="@color/white"/>
 
 
