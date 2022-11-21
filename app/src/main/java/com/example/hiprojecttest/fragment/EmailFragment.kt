@@ -11,6 +11,7 @@ import androidx.navigation.findNavController
 import com.example.hiprojecttest.R
 import com.example.hiprojecttest.databinding.FragmentEMailBinding
 import com.example.hiprojecttest.setOnTextChanged
+import java.util.regex.Pattern
 
 class EmailFragment : Fragment(){
     lateinit var navController: NavController
@@ -25,11 +26,12 @@ class EmailFragment : Fragment(){
 
         navController = requireActivity().findNavController(R.id.nav_host_fragment_email)
         var setting = binding.inputTextEmail.toString()
+        var data = setting.substring(6 until 15)
+        var emailGuide = "@gsm.hs.kr"
 
-
-        binding.inputTextEmail.setOnTextChanged{p0, p1, p2, p3 ->
+        binding.inputTextEmail.setOnTextChanged { p0, p1, p2, p3 ->
             if (!p0.isNullOrBlank()){
-                binding.postEmail.setOnClickListener{
+                binding.postEmail.setOnClickListener {
                     navController.navigate(R.id.action_e_mailFragment_to_emailProveFragment)
                 }
             }

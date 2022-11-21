@@ -167,7 +167,9 @@
         android:hint="@string/name_edit"
         android:textColorHint="@color/hint_black1"
         android:fontFamily="@font/pretendard_medium"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        />
     <Button
         android:id="@+id/next_stage_btn"
         android:layout_width="0dp"
