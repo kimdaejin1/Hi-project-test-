@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.LastSinUpFragment"
+    android:background="@drawable/test">
+
+    <!-- 이미지 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vectorImageGuide_ver_left"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vectorImageGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.69"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vectorImageGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vectorImageGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.398"/>
+
+    <!-- 가장 큰 텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bigTiltleTextGuide_ver_left"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.34"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bigTiltleTextGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bigTiltleTextGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bigTiltleTextGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.466"/>
+
+    <!-- 작은 타이틀 텍스트 -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTiltleTextGuide_ver_left"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.21"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTiltleTextGuide_ver_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.78"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTiltleTextGuide_hor_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.474"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/smallTiltleTextGuide_hor_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54"/>
+
+    <!-- 버튼 -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

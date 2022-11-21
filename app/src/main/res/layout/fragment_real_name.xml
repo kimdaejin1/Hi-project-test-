@@ -113,8 +113,8 @@
 
     <ImageButton
         android:id="@+id/backTraking_btn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="@id/goBackGuide_ver_left"
         app:layout_constraintEnd_toEndOf="@id/goBackGuide_ver_right"
         app:layout_constraintTop_toTopOf="@id/goBackGuide_hor_top"
@@ -156,10 +156,12 @@
         android:fontFamily="@font/pretendard_medium"
         android:textSize="11sp"
         android:textColor="@color/hint_black2"/>
+
     <EditText
         android:id="@+id/input_text_name"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:backgroundTint="@drawable/focuspoint"
         app:layout_constraintStart_toStartOf="@id/textGuide_ver_left"
         app:layout_constraintEnd_toEndOf="@id/nameInputGuide_ver_right"
         app:layout_constraintTop_toTopOf="@id/smallTextGuide2_hor_bottom"

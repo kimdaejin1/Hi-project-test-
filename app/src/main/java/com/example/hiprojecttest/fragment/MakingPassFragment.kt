@@ -33,15 +33,12 @@ class MakingPassFragment : Fragment() {
 
         var newPass = binding.inputNewPass.toString()
         var checkingPass = binding.reinputPass.toString()
-        val intent = Intent(activity, MainActivity::class.java)
 
         binding.reinputPass.setOnTextChanged { p0, p1, p2, p3 ->
             if (!p0.isNullOrBlank()){
                 binding.nextStageBtn.setBackground(resources.getDrawable(R.drawable.gradientbutton))
-                if (newPass==checkingPass){
-                    binding.nextStageBtn.setOnClickListener {
-                        startActivity(intent)
-                    }
+                binding.nextStageBtn.setOnClickListener {
+
                 }
             }
         }
